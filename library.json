@@ -17,8 +17,9 @@
     "license": "MIT",
     "homepage": "https://www.helloworld.org/",
     "dependencies": {
-        "ownername/print": "~1.3.0"
+        "sebmillet/RF433any": "^0.7.6",
+        "sebmillet/RF433send": "^0.5.4"
     },
-    "frameworks": "*",
-    "platforms": "*"
+    "frameworks": "arduino",
+    "platforms": "espressif32"
 }
