@@ -20,6 +20,7 @@ class TX433
 private:
     SignalPack_t all_Protocols[12];
     uint8_t PIN_RFOUT = 0;
+
 public:
     TX433(uint8_t PIN_RFOUT = 0);
     void Send();
@@ -39,7 +40,7 @@ private:
     bool SYSTEM_RECEIVE = true;
 
 public:
-    RX433(uint8_t PIN_RFIN = 2){};
+    RX433(uint8_t PIN_RFIN = 2);
     void setCallback(void (*userDefinedCallback)(Decoder *object)) { localPointerToCallback = userDefinedCallback; }
     void Listen();
     void Stop()

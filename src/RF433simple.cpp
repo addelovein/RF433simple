@@ -20,51 +20,6 @@ int getmin(int64_t i)
     return 8;
 }
 
-/*
-txinfo TX433::refreshTX(uint16_t SEND_BITS){
-    ESP_LOGD("TXINFO","SEND_BITS: %d   SEND VALUE: %d    SEND PROT:%d",SEND_BITS,Decimal,Protocol);
-    txinfo *tx = new txinfo[12];
-    tx[0] = { rfsend_builder(RfSendEncoding::TRIBIT, PIN_RFOUT,
-                RFSEND_DEFAULT_CONVENTION, Repeat, NULL, 10850, 0, 0,
-                0, 350, 1050, 0, 0, 350, 10850, SEND_BITS),"protocol 1" };
-    tx[1] = { rfsend_builder(RfSendEncoding::TRIBIT, PIN_RFOUT,
-                  RFSEND_DEFAULT_CONVENTION, Repeat, NULL, 6500, 0, 0,
-                  0, 650, 1300, 0, 0, 650, 6500, SEND_BITS),"protocol 2" };
-    tx[2] = { rfsend_builder(RfSendEncoding::TRIBIT, PIN_RFOUT,
-                  RFSEND_DEFAULT_CONVENTION, Repeat, NULL, 7100, 0, 0,
-                  0, 400, 900, 600, 1100, 400, 7100, SEND_BITS), "protocol 3" },
-    tx[3] = { rfsend_builder(RfSendEncoding::TRIBIT, PIN_RFOUT,
-                  RFSEND_DEFAULT_CONVENTION, Repeat, NULL, 2280, 0, 0,
-                  0, 380, 1140, 0, 0, 380, 2280, SEND_BITS), "protocol 4, see NOTE (*)" };
-    tx[4] = { rfsend_builder(RfSendEncoding::TRIBIT, PIN_RFOUT,
-                  RFSEND_DEFAULT_CONVENTION, Repeat, NULL, 7000, 0, 0,
-                  0, 500, 1000, 0, 0, 500, 7000, SEND_BITS), "protocol 5" };
-    tx[5] = { rfsend_builder(RfSendEncoding::TRIBIT_INVERTED, PIN_RFOUT,
-                  RFSEND_DEFAULT_CONVENTION, Repeat, NULL, 10350, 0, 0,
-                  450, 450, 900, 0, 0, 0, 10350, SEND_BITS),"protocol 6" };
-    tx[6] = { rfsend_builder(RfSendEncoding::TRIBIT, PIN_RFOUT,
-                  RFSEND_DEFAULT_CONVENTION, Repeat, NULL, 9300, 0, 0,
-                  0, 150, 900, 0, 0, 150, 9300, SEND_BITS),"protocol 7" };
-    tx[7] = { rfsend_builder(RfSendEncoding::TRIBIT, PIN_RFOUT,
-                  RFSEND_DEFAULT_CONVENTION, Repeat, NULL, 26000, 0, 0,
-                  0, 1400, 600, 3200, 3200, 600, 26000, SEND_BITS),"protocol 8 (**)" };
-    tx[8] = { rfsend_builder(RfSendEncoding::TRIBIT_INVERTED, PIN_RFOUT,
-                  RFSEND_DEFAULT_CONVENTION, Repeat, NULL, 26000, 0, 0,
-                  1400, 1400, 600, 3200, 3200, 0, 26000, SEND_BITS), "protocol 9 (**)" };
-    tx[9] = { rfsend_builder(RfSendEncoding::TRIBIT_INVERTED, PIN_RFOUT,
-                  RFSEND_CONVENTION_1, Repeat, NULL, 6570, 0, 0, 365,
-                  365, 1095, 0, 0, 0, 6570, SEND_BITS), "protocol 10" };
-// ERROR ROW
-    tx[10] = { rfsend_builder(RfSendEncoding::TRIBIT_INVERTED, PIN_RFOUT,
-                   RFSEND_DEFAULT_CONVENTION, Repeat, NULL, 9720, 0, 0,
-                   270, 270, 540, 0, 0, 0, 9720, SEND_BITS), "protocol 11" };
-    tx[11] = { rfsend_builder(RfSendEncoding::TRIBIT_INVERTED, PIN_RFOUT,
-                   RFSEND_DEFAULT_CONVENTION, Repeat, NULL, 11520, 0, 0,
-                   320, 320, 640, 0, 0, 0, 11520, SEND_BITS), "protocol 12" };
-    return tx[10];
-}
-*/
-
 void TX433::Send()
 {
     uint8_t SEND_BYTES = 0;
