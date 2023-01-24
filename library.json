@@ -1,6 +1,6 @@
 {
     "name": "RF433simple",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Library for ESP32. A wrapper i made for my own projects to simplyfy sending and receiving data. Mostly focused on RC-switch protocols",
     "keywords": "433, RF, nexa",
     "repository": {
